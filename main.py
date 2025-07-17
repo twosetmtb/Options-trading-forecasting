@@ -41,7 +41,7 @@ for i in range(st.session_state.n_stocks):
     with cols[i]:
         st.markdown(f"**Stock {i+1}**")
         t = st.text_input(f"Ticker {i+1}", key=f"ticker_{i}").upper()
-        c1 = st.number_input(f"Call1 BE@EX {i+1}", key=f"c1_{i}")
+        c1 = st.number_input(f"Call1 BE@EX {i+1}", key=f"c1_{i} (BE@EX = breakeven at expiration)")
         c2 = st.number_input(f"Call2 BE@EX {i+1}", key=f"c2_{i}")
         p1 = st.number_input(f"Put1 BE@EX {i+1}", key=f"p1_{i}")
         p2 = st.number_input(f"Put2 BE@EX {i+1}", key=f"p2_{i}")
